@@ -1,0 +1,26 @@
+@import "header";
+@import "footer";
+
+
+h2{
+    position: relative;
+    text-align: center;
+}
+
+
+
+.grid{
+    display: grid;
+    position: relative;
+    left: 8vw;
+    width: 84vw;
+    margin-bottom: 12vh;
+    &.dividida-2{
+        grid-template: auto/repeat(2, 38vw);
+        gap:12vh 8vw;
+    }
+}
+
+img{
+    width: 100%;
+}

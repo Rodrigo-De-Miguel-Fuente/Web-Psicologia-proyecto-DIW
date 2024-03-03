@@ -1,0 +1,96 @@
+@import "header";
+@import "footer";
+
+section{
+    position: relative;
+    display: grid;
+    margin-bottom: 5vh;
+    @media (min-width:801px) and (max-width:1200px){
+        top: 2vh;
+        left: 8vw;
+        width: 84%;
+        grid-template: 30vw/repeat(3, 24vw);
+        gap: 10vh 6vw;
+        & article{
+            max-height: 30vw;
+        }
+    }
+
+    @media (max-width:800px){
+        top: 8vh;
+        left: 10vw;
+        width: 80%;
+        grid-template:80vw/80vw;
+        gap:10vh;
+        & article{
+            max-height: 80vw;
+        }
+    }
+
+    @media (min-width:1201px) and (max-width:1800px){
+        top: 2vh;
+        left: 12vw;
+        width: 76%;
+        grid-template: 30vw/repeat(3, 20vw);
+        gap:10vh 8vw;
+        & article{
+            max-height: 30vw;
+        }
+    }
+
+    @media (min-width:1801px){
+        top: 4vh;
+        left: 11vw;
+        width: 78%;
+        grid-template: 25vw/repeat(4, 15vw);
+        gap:12vh 6vw;
+        & article{
+            max-height: 25vw;
+        }
+    }
+
+    @media (max-height:600px) and (min-aspect-ratio:1/1){
+        top: 4vh;
+        left: 10vw;
+        width: 80%;
+        grid-template: 70vh/repeat(2, 36vw);
+        gap:12vh 8vw;
+        & article{
+            max-height: 70vh;
+        }
+    }
+}
+
+.entrada{
+    height: 100%;
+    display: block;
+    &,img{
+        width: 100%;
+        margin: 0;
+    }
+    & h3{
+        text-align: center;
+        margin: 0vw;
+    }
+    & p{
+        text-align: justify;
+        overflow: hidden;
+        margin: 1vw;
+    }
+    & img{
+        height: auto;
+        overflow: hidden;
+    }
+    &>.overflow{
+        height: 95%;
+        overflow: hidden;
+    }
+}
+
+
+
+h2{
+    position: relative;
+    left: 6vw;
+}
+

@@ -1,0 +1,30 @@
+@import "header";
+@import "footer";
+
+
+.cons-form{
+    position: relative;
+    display: block;
+    height: auto;
+    @media (max-width:800px){
+        width: 70vw;
+        left: 15vw;
+    }
+    @media (min-width:801px){
+        width: 40vw;
+        left: 30vw;
+    }
+    top:10vh;
+    text-align: center;
+    &>input{
+        display: block;
+        position: relative;
+        left: 5%;
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 48px;
+        margin-bottom: 15px;
+    }
+    
+}

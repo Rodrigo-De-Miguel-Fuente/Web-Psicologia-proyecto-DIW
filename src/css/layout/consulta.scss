@@ -1,0 +1,41 @@
+@import "header";
+@import "footer";
+
+
+.cons-form{
+    position: relative;
+    display: block;
+    height: auto;
+    @media (max-width:800px){
+        width: 70vw;
+        left: 15vw;
+    }
+    @media (min-width:801px){
+        width: 40vw;
+        left: 30vw;
+    }
+    top:10vh;
+    text-align: center;
+    &>.asunto{
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 48px;
+        margin-bottom: 15px;
+    }
+    &>.pregunta{
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 200px;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+    &>.boton{
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 48px;
+        margin-bottom: 15px;
+    }
+}

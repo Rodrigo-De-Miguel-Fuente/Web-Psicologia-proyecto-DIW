@@ -1,0 +1,38 @@
+@import "header";
+@import "footer";
+
+
+
+.img-inicio{
+    border-radius: 10%;
+}
+
+section{
+    &:first-of-type{
+        &>article{
+            &>h2{
+                color: rgba($color: #0878f7, $alpha: 0.9);
+                font-size: 2rem;
+            }
+            &>p{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.realiza-consul{
+    background-color: rgba($color: #f7a107, $alpha: 0.7);
+
+}
+
+.seguimiento{
+    background-color: rgba($color: #0878f7, $alpha: 0.7);
+}
+
+.btn-princ{
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}

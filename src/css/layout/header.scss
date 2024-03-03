@@ -1,0 +1,70 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 15vh;
+    z-index: 999;
+}
+
+.logo{
+    position: relative;
+    width: 5vw;
+    max-height: 8vh;
+    height: auto;
+    width: auto;
+    top: 1vh;
+    left: 6vw;
+    z-index: 1;
+}
+
+.nombre{
+    position: absolute;
+    margin: 0;
+    height: auto;
+    top: 3vh;
+    left: 16vw;
+}
+
+.consul-boton{
+    position: absolute;
+    right: 5vw;
+    top: 3vh;
+    width: 15vw;
+    height: 4vh;
+}
+
+.menu{
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    &:not(:hover){
+        &>input{
+            box-sizing: border-box;
+            min-height: 6vh;
+            min-width: calc(100%/7);
+        }
+    }
+    &:hover{
+        &>input{
+            box-sizing: border-box;
+            min-height: 6vh;
+            min-width: 13.5%;
+            &:hover{
+                min-width: 19%;
+            }
+        }
+    }
+
+}

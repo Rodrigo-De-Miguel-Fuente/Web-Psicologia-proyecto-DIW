@@ -1,0 +1,41 @@
+*{
+    font-family: "Cardo", 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgba($color: #e8ecef, $alpha: 1.0);
+}
+
+header{
+    background-color: rgba($color: #e8ecef, $alpha: 1.0);
+}
+
+.nombre{
+    font-family: "Rubik Mono One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bolder;
+    font-size: 2.25rem;
+    color: #0878f7;
+}
+
+.consul-boton{
+    background-color: rgba($color: #f7a107, $alpha: 0.7);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu{
+    border: none;
+    &>input{
+        background-color: rgba($color: #0878f7, $alpha: 0.3);
+        border-top: none;
+        border-bottom: none;
+        border-right: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+        border-left: none;
+        font-size: 1.15rem;
+    &:first-child{
+        border-left: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+    }
+    }
+}

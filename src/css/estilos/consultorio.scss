@@ -1,0 +1,12 @@
+@import "header";
+@import "footer";
+@import "blog";
+
+
+.consulta-btn{
+    background-color: rgba($color: #f7a107, $alpha: 0.7);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
