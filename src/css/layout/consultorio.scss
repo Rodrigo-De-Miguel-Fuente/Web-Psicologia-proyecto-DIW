@@ -14,3 +14,10 @@
 h2{
     display: inline-block;
 }
+
+@media (max-width:800px){
+    .consulta-btn{
+        left: 15vw;
+        width: 50vw;
+    }
+}

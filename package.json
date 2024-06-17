@@ -4,8 +4,8 @@
   "description": "proyecto DIW",
   "browsers": "> 0.5%, last 4 versions, not dead",
   "scripts": {
-    "desarrollo": "parcel src/html/index.html --dist-dir desarrollo",
-    "produccion": "parcel build src/html/index.html --public-url './' --dist-dir produccion",
+    "desarrollo": "parcel src/index.html --dist-dir desarrollo --no-cache",
+    "produccion": "parcel build src/index.html --public-url './' --dist-dir produccion  --no-cache",
     "limpieza": "rimraf desarrollo produccion .parcel-cache",
     "des": "npm run desarrollo",
     "prod": "npm-run-all limpieza produccion"

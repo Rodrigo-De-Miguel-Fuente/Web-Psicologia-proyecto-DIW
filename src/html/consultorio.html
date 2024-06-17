@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krini psicología</title>
+    <link rel="icon" href="../../img/logo.svg" type="image/icon type">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/layout/consultorio.scss">
-    <link rel="stylesheet" href="../css/estilos/consultorio.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/menu_hamb.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/layout/consultorio.css">
+    <link rel="stylesheet" href="../css/estilos/consultorio.css">
+
+    </a>
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="../../img/logo.svg" alt="logo">
+        <a href="../index.html"><img class="logo" src="../../img/logo.svg" alt="logo">
         <p class="nombre">KRINI PSICOLOGÍA</p></a>
-        <input class="consul-boton" type="button" value="Realiza una consulta" onclick="location.href='consulta.html';">
+        <input class="consul-boton" type="button" value="Consultorio" onclick="location.href='consultorio.html';">
+        <a class="menu-hamb" onclick="menu_hamb()">
+            <i class="fa fa-bars"></i>
+        </a>
         <div class="menu">
+            <input type="button" value="Inicio" onclick="location.href='../index.html';">
             <input type="button" value="Crianza 0-3 años" onclick="location.href='blog.html';">
             <input type="button" value="Problemas 4-10 años" onclick="location.href='blog.html';">
             <input type="button" value="Preadolescencia" onclick="location.href='blog.html';">

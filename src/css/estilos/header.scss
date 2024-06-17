@@ -2,17 +2,13 @@
     font-family: "Cardo", 'Times New Roman', Times, serif;
 }
 
-body{
-    background-color: rgba($color: #e8ecef, $alpha: 1.0);
-}
-
 header{
     background-color: rgba($color: #e8ecef, $alpha: 1.0);
 }
 
 .nombre{
-    font-family: "Rubik Mono One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-style: bolder;
+    font-family: "Lato", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
     font-size: 2.25rem;
     color: #0878f7;
 }
@@ -34,8 +30,65 @@ header{
         border-right: 4px solid rgba($color: #3371B8, $alpha: 0.8);
         border-left: none;
         font-size: 1.15rem;
-    &:first-child{
-        border-left: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+        &:hover{
+            border-bottom: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+            border-top: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+        }
+        &:first-child{
+            border-left: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+        }
     }
+}
+/*
+Flechas integradas en el menú para moverlo, idea desechada
+.flecha-menu{
+    background-color: rgba($color: #e8ecef, $alpha: 1);
+    &>div>div{
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+.flecha-izquierda{
+    border-right: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+    &>div>div{
+        border-right: 15px solid rgba($color: #3371B8, $alpha: 0.8);
+    }
+}
+
+.flecha-derecha{
+    border-left: 4px solid rgba($color: #3371B8, $alpha: 0.8);
+    &>div>div{
+        border-left: 15px solid rgba($color: #3371B8, $alpha: 0.8);
+    }
+}
+
+.fondo-transp{
+    background-color: rgba($color: #0878f7, $alpha: 0.3);
+}*/
+
+@media (max-width:800px){
+    .consul-boton{
+        background-color: rgba($color: #f7a107, $alpha: 0.7);
+        border-style: none;
+        border-radius: 5px;
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+    .nombre{
+        font-style: bolder;
+        font-size: 1.2rem;
+        color: #0878f7;
+    }
+    .menu-hamb{
+        background-color: #3371B8;
+    }
+    .menu{
+        background-color: rgba($color: #e8ecef, $alpha: 1);
+        &>input{
+            background-color: rgba($color: #0878f7, $alpha: 0.3);
+            border-left: 4px solid rgba(51, 113, 184, 0.8);
+            border-bottom: 3px solid rgba(51, 113, 184, 0.8);
+        }
     }
 }

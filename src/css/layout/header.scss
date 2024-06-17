@@ -38,33 +38,160 @@ header{
     top: 3vh;
     width: 15vw;
     height: 4vh;
+    &:hover{
+        @media (min-width:801px){
+            right: 4vw;
+            top: 2.5vh;
+            width: 17vw;
+            height: 5vh;
+        }
+    }
+}
+
+.menu-hamb{
+    visibility: hidden;
 }
 
 .menu{
+    z-index: 2;
     box-sizing: border-box;
     display: flex;
     position: absolute;
     bottom: 0vh;
-    left: 0;
-    right: 0;
     width: 100%;
     flex-wrap: nowrap;
-    &:not(:hover){
-        &>input{
-            box-sizing: border-box;
-            min-height: 6vh;
-            min-width: calc(100%/7);
-        }
+    overflow: auto;
+    &>input{
+        box-sizing: border-box;
+        min-height: 6vh;
+        width: calc(100%/7);
+        min-width: fit-content;
     }
+}
+    /*
+    Metodo antiguo para visualizar que se selecciona en el menú
     &:hover{
         &>input{
             box-sizing: border-box;
             min-height: 6vh;
-            min-width: 13.5%;
+            //min-width: 13.5%;
             &:hover{
                 min-width: 19%;
             }
         }
-    }
+    }*/
 
+/*
+Flechas integradas en el menú para moverlo, idea desechada
+.flecha-menu{
+    position: absolute;
+    visibility: visible;
+    bottom: 0vh;
+    z-index: 3;
+    box-sizing: border-box;
+    height: 6vh;
+    width: 8vw;
+    &>div>div{
+        margin-top: 2vh;
+        width: 0;
+        height: 0; 
+      }
+}
+
+.flecha-izquierda{
+    visibility: hidden;
+    left: 0vw;
+    &>div>div{
+        margin-left: 3vw;
+    }
+}
+
+.flecha-derecha{
+    right: 0vw;
+    &>div>div{
+        margin-left: 3vw;
+    }
+}
+
+.fondo-transp{
+    position: inherit;
+    top: 0;
+    width: 8vw;
+    height: 6vh;
+}*/
+
+@media (max-width:600px){
+    header{
+        position: static;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 12vh;
+        z-index: 999;
+    }
+    .logo{
+        position: relative;
+        max-width: 10vw;
+        max-height: 6.6vh;
+        height: auto;
+        width: auto;
+        top: 2vh;
+        left: 4vw;
+        z-index: 1;
+    }
+    .consul-boton{
+        position: absolute;
+        right: 5vw;
+        top: 3vh;
+        width: 35vw;
+        height: 3vh;
+    }
+    .nombre{
+        position: absolute;
+        margin: 0;
+        height: auto;
+        top: 2vh;
+        left: 16vw;
+        max-width: 35vw;
+        text-align: center;
+    }
+    .menu-hamb{
+        visibility: visible;
+        position: relative;
+        display: block;
+        width: 10vw;
+        height: 3vh;
+        top: 3vh;
+        left: 5vw;
+        border-radius: 6px;
+        text-align: center;
+        &>i{
+            margin-top: 0.5vh;
+        }
+    }
+    .open{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 4vh;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        border-radius: 0;
+        &>i{
+            margin-top: 1vh;
+        }
+    }
+    .menu{
+        display: none;
+        top: 12vh;
+        bottom: auto;
+        &>input{
+            display: block;
+            width: 100%;
+        }
+    }
+    .flecha-menu{
+        visibility: hidden;
+    }
 }
