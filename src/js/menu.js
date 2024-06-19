@@ -8,7 +8,7 @@ function menu_hamb() {
       document.getElementsByClassName("menu-hamb")[0].classList.add("open");
     }
   }
-
+/*
 function menu_derecha(){
   var x = document.getElementsByClassName("menu");
   x[0].style.removeProperty('left');
@@ -23,4 +23,4 @@ function menu_izquierda(){
   x[0].style.left = "0";
   document.getElementsByClassName("flecha-derecha")[0].style.visibility = "visible";
   document.getElementsByClassName("flecha-izquierda")[0].style.visibility = "hidden";
-}
+}*/
