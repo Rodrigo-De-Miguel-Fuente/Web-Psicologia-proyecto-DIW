@@ -7,21 +7,22 @@
     "desarrollo": "parcel src/index.html --dist-dir desarrollo --no-cache",
     "produccion": "parcel build src/index.html --public-url './' --dist-dir produccion  --no-cache",
     "limpieza": "rimraf desarrollo produccion .parcel-cache",
-    "des": "npm run desarrollo",
+    "des": "npm-run-all limpieza desarrollo",
     "prod": "npm-run-all limpieza produccion"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Rodrigo-De-Miguel-Fuente/Web-Psicologia-proyecto-DIW"
   },
   "author": "Rodrigo de Miguel",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/Rodrigo-De-Miguel-Fuente/Web-Psicologia-proyecto-DIW#README",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.11.0",
     "parcel-plugin-imagemin": "^4.0.2",
     "rimraf": "^5.0.5"
-  }
+  },
+  "main": "index.js"
 }
