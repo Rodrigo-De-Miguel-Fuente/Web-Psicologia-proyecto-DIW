@@ -12,8 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/layout/inicio.scss">
     <link rel="stylesheet" href="css/estilos/inicio.scss">
-
-    </a>
+    <!--links para que parcel detecte los ficheros, no detecta enlaces en input-->
+    <link href="html/blog.html">
+    <link href="html/consultorio.html">
+    <link href="html/consulta.html">
+    <link href="html/registro.html">
 </head>
 <body>
     <header>
@@ -21,7 +24,7 @@
             <img class="logo" src="../img/logo.svg" alt="logo">
             <p class="nombre">KRINI PSICOLOGÍA</p>
         </a>
-        <input class="consul-boton" type="button" value="Consultorio" onclick="location.href='html/consultorio.html';">
+        <input class="consul-boton" type="button" value="Consultorio" onclick="location.href='html/consultorio.html'">
         <a class="menu-hamb" onclick="menu_hamb()">
             <i class="fa fa-bars"></i>
         </a>
